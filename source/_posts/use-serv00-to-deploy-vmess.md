@@ -24,8 +24,6 @@ tags:
 |Proxy port|*你在第3步时获取的端口*|
 |Use HTPPS|False|
 |DNS support|True|
-  </tbody>
-</table>
 
 ## 第5步：登录SSH
 根据邮箱中给出的信息登录
