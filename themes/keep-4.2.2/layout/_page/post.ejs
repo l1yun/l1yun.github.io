@@ -105,6 +105,23 @@ const is_code_block_unshrink = page?.code_block_shrink === false
                     </div>
                 </div>
 
+                <script src="https://giscus.app/client.js"
+                        data-repo="l1yun/l1yun.github.io"
+                        data-repo-id="R_kgDOMmXZZQ"
+                        data-category="Discussions"
+                        data-category-id="DIC_kwDOMmXZZc4Ch05L"
+                        data-mapping="pathname"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="top"
+                        data-theme="preferred_color_scheme"
+                        data-lang="zh-CN"
+                        data-loading="lazy"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+
                 <% if (theme?.post?.reward?.enable === true && theme?.post?.reward?.img_link && page?.reward !== false) { %>
                     <%- partial('_partial/post/reward-author') %>
                 <% } %>
