@@ -18,13 +18,13 @@ base_info:
   author: 云离雾里
 
   # Author avatar, You can use local image path or image link
-  avatar: /images/avatar.svg
+  avatar: https://avatars.githubusercontent.com/u/87262345?v=4
 
   # Website LOGO, You can use local image path or image link
-  logo: /images/logo.svg
+  logo: https://avatars.githubusercontent.com/u/87262345?v=4
 
   # Website favicon, You can use local image path or image link
-  favicon: /images/logo.svg
+  favicon: https://avatars.githubusercontent.com/u/87262345?v=4
 
 
 # ---------------------------------------------------------------------------------------
@@ -162,8 +162,8 @@ post:
 code_block:
   # Toolbar include: "code copy", "code block collapse" and "code language"
   tools:
-    enable: false            # Option values: true | false
-    style: default           # Option values: default | mac
+    enable: true            # Option values: true | false
+    style: mac           # Option values: default | mac
   highlight_theme: default   # Option values: default | obsidian
 
 
