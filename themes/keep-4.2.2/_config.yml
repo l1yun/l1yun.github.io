@@ -18,13 +18,13 @@ base_info:
   author: 云离雾里
 
   # Author avatar, You can use local image path or image link
-  avatar: https://avatars.githubusercontent.com/u/87262345?v=4
+  avatar: favicon.png
 
   # Website LOGO, You can use local image path or image link
-  logo: https://avatars.githubusercontent.com/u/87262345?v=4
+  logo: favicon.png
 
   # Website favicon, You can use local image path or image link
-  favicon: https://avatars.githubusercontent.com/u/87262345?v=4
+  favicon: favicon.ico
 
 
 # ---------------------------------------------------------------------------------------
