@@ -115,10 +115,7 @@ bash <(curl -s https://raw.githubusercontent.com/f123ly/xray-core/main/download-
 ``` shell
 ./xray
 ```
-如果 Xray 正常运行，则进行下一步
-
-## 第10步：使用 pm2 启动 Xray
-在 xray 文件夹中依次运行以下命令：
+如果 Xray 正常运行，则按下 Ctrl + C 停止 Xray，并使用 pm2 启动 Xray：
 ``` shell
 pm2 start ./xray
 pm2 save
