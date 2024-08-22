@@ -123,7 +123,7 @@ home:
 post:
   # Author badge in the post
   author_badge:
-    enable: true         # Option values: true | false
+    enable: false         # Option values: true | false
 
     # If true, show Lv1, Lv2, Lv3 ...
     # If false, show custom badge
