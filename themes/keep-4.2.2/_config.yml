@@ -18,13 +18,13 @@ base_info:
   author: 云离雾里
 
   # Author avatar, You can use local image path or image link
-  avatar: favicon.png
+  avatar: https://s2.loli.net/2024/08/23/XGuQSm2NtxRaWvb.webp
 
   # Website LOGO, You can use local image path or image link
-  logo: favicon.png
+  logo: https://s2.loli.net/2024/08/23/XGuQSm2NtxRaWvb.webp
 
   # Website favicon, You can use local image path or image link
-  favicon: favicon.ico
+  favicon: https://s2.loli.net/2024/08/23/XGuQSm2NtxRaWvb.webp
 
 
 # ---------------------------------------------------------------------------------------
