@@ -37,45 +37,27 @@ chmod +x restart-pm2.sh
 #!/bin/bash
 
 USERNAME=''
-PASSWORD=''
-SSH_ADDRESS=''
-SERVER_ADDRESS=''
+WEBSITE=''
 
 check_health() {
-    local CODE=$(curl -o /dev/null -s -w "%{http_code}\n" --connect-timeout 10 --max-time 30 ${SERVER_ADDRESS})
+    local CODE=$(curl -o /dev/null -s -w "%{http_code}\n" --connect-timeout 10 --max-time 30 --user-agent "https://l1yun.github.io" ${WEBSITE})
     if [ "$CODE" = "502" ]; then
         return 1
     fi
     return 0
 }
-
-restart_server() {
-    echo 'Trying to restart server...'
-    local REMOTE_COMMAND1="/home/${USERNAME}/.npm-global/bin/pm2 resurrect && exit" \
-    && sshpass -p "${PASSWORD}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -tt ${USERNAME}@${SSH_ADDRESS} "$(eval echo $REMOTE_COMMAND1)" \
-    && local REMOTE_COMMAND2="/home/${USERNAME}/.npm-global/bin/pm2 restart all && exit" \
-    && sshpass -p "${PASSWORD}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -tt ${USERNAME}@${SSH_ADDRESS} "$(eval echo $REMOTE_COMMAND2)" 
-}
-
 check_health
 EXIT_CODE=$?
 if [ ${EXIT_CODE} -eq 1 ]; then
-    echo 'Server is down! trying to restart server...'
+    echo 'Trying to restart pm2...'
+    /home/${USERNAME}/.npm-global/bin/pm2 resurrect
+    /home/${USERNAME}/.npm-global/bin/pm2 restart all
 
-    while [ ${EXIT_CODE} -eq 1 ]; do
-        restart_server
-        sleep 120
-        check_health
-        EXIT_CODE=$?
-    done
-
-    if [ ${EXIT_CODE} -eq 0 ]; then
-        echo 'Server is up!'
-    fi
+elif [ ${EXIT_CODE} -eq 0 ]; then
+    echo 'Server is up!'
 fi
-
 ```
-更改上述脚本中 `USERNAME`，`PASSWORD`，`SSH_ADDRESS`，`SERVER_ADDRESS` 的值
+更改上述脚本中 `USERNAME`，`WEBSITE` 的值
 
 ## 第7步：登录 Web 面板
 根据邮箱中给出的信息，登录到Web面板
