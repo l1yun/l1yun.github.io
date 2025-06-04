@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+<%- partial('_partial/head') %>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P46PLQVB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>Add commentMore actions
+<!-- End Google Tag Manager (noscript) -->
+<%- body %>
+<%- partial('_partial/scripts') %>
+<% if (theme?.inject?.enable === true) { %>
+    <% theme?.inject?.js?.forEach((js_path) => { %>
+        <% if (js_path && isJsFile(js_path)) { %>
+            <%- js({
+                class: 'custom-inject-js',
+                src: js_path,
+                'data-pjax': true
+            }) %>
+        <% } %>
+    <% }) %>
+<% } %>
+</body>
+</html>

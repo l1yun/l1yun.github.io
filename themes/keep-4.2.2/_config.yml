@@ -35,8 +35,8 @@ base_info:
 # Use `||` to set icon for navigation menu, e.g. `home: / || fa-solid fa-home`
 menu:
   主页: / || fa-solid fa-home
-  存档: /archives || fa-solid fa-box-archive
-  标签: /tags || fa-solid fa-tags
+  存档: /archives/ || fa-solid fa-box-archive
+  标签: /tags/ || fa-solid fa-tags
   # categories: /categories     # || fa-solid fa-layer-group
   # links: /links               # || fa-solid fa-link
   # photos: /photos             # || fa-solid fa-image
