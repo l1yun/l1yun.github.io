@@ -53,5 +53,5 @@ tags:
 1. 点击右上角 **Deploy Application** 按钮
 2. 等待 2-3 分钟状态变为 **Running**
 
-## 3x-ui 配置
+## ⚙️ 3x-ui 配置
 本文仅讲解如何在Claw Cloud上部署3x-ui，3x-ui相关内容详见 [#3x-ui](https://l1yun.github.io/tags/3x-ui/)
