@@ -10,7 +10,7 @@ tags:
 
 {% note danger %}
 由于Serv00在2025年4月3日宣布禁止搭建VPN相关内容，故本教程已失效
-详见 [April cleaning and new ToS - Serv00.com](https://forum.serv00.com/d/2787-april-cleaning-and-new-tos)
+详见 [April cleaning and new ToS - Serv00.com](https://forum.serv00.com/d/2787-april-cleaning-and-new-tos?utm_source=l1yun.github.io)
 {% endnote %}
 
 ## 第1步：登录Web面板
@@ -53,7 +53,7 @@ unzip Xray-freebsd-64.zip
 
 ## 第8步：配置Xray
 在 `xray` 文件夹中新建 `config,json` 文件：
-你可以去 https://github.com/XTLS/Xray-examples 获取配置文件，然后修改配置文件中 `port` 的值为第3步获取到的端口，修改 `uuid` 的值为你的 UUID
+你可以去 [XTLS/Xray-examples](https://github.com/XTLS/Xray-examples?utm_source=l1yun.github.io) 获取配置文件，然后修改配置文件中 `port` 的值为第3步获取到的端口，修改 `uuid` 的值为你的 UUID
 
 ## 第9步：启动Xray
 在 xray 文件夹中运行以下命令：

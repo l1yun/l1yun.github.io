@@ -9,7 +9,7 @@ tags:
 ---
 
 ## 📝 准备工作
-1. 访问 [Claw Cloud 官网](https://claw.cloud/) 
+1. 访问 [Claw Cloud 官网](https://run.claw.cloud/?utm_source=l1yun.github.io) 
 2. 使用一个**注册时间大于180天**的GitHub账户注册Claw Cloud账户（可以领取每月$5的免费额度）
 
 ## 🚀 部署步骤

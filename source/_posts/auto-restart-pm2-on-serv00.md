@@ -42,7 +42,7 @@ USERNAME=''
 WEBSITE=''
 
 check_health() {
-    local CODE=$(curl -o /dev/null -s -w "%{http_code}\n" --connect-timeout 10 --max-time 30 --user-agent "https://l1yun.github.io" ${WEBSITE})
+    local CODE=$(curl -o /dev/null -s -w "%{http_code}\n" --connect-timeout 10 --max-time 30 ${WEBSITE})
     if [ "$CODE" = "502" ]; then
         return 1
     fi
